@@ -1,7 +1,7 @@
 {
   "name": "project-2",
   "version": "1.0.0",
-  "engines":{
+  "engines": {
     "node": "10.0.0"
   },
   "description": "Project 2 Starter",
@@ -26,7 +26,8 @@
     "mysql2": "^1.6.1",
     "node": "^10.10.0",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.38.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
