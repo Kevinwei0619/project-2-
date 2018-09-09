@@ -1,22 +1,28 @@
 {
-  "name": "project-2",
+  "name": "project-2-",
   "version": "1.0.0",
-  "engines": {
-    "node": "10.0.0"
+  "description": "",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
   },
-  "description": "Project 2 Starter",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "lint": "eslint **/*.js --quiet",
-    "fix": "eslint --fix .",
-    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevinwei0619/project-2-.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevinwei0619/project-2-/issues"
+  },
+  "homepage": "https://github.com/Kevinwei0619/project-2-#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
-    "body-parser": "^1.18.3",
-    "connection": "^4.13.5",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
@@ -24,20 +30,8 @@
     "google-distance-matrix": "^1.1.1",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.1",
-    "node": "^10.10.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.38.0"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "chai-http": "^4.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-google": "^0.9.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.4",
-    "prettier": "^1.13.7"
   }
 }

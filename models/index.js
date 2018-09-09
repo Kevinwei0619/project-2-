@@ -5,22 +5,22 @@ const path = require('path');
 const Sequelize = require('sequelize');
 
 //allow for sequelize operators
-const op = Sequelize.Op;
-const operatorsAliases = {
-    $eq: op.eq,
-    $or: op.or,
-    $like: op.like,
-}
+// const op = Sequelize.Op;
+// const operatorsAliases = {
+//     $eq: op.eq,
+//     $or: op.or,
+//     $like: op.like,
+// }
 const basename = path.basename(module.filename);
 // const env = process.env.NODE_ENV || 'development';
-const env = process.env.NODE_ENV || 'production';
+const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 console.log(config);
 const db = {};
 
 let connection;
-if (config.use_env_constiable) {
-   connection = new Sequelize(process.env[config.use_env_constiable]);
+if (config.use_env_variable) {
+   connection = new Sequelize(process.env[config.use_env_variable]);
 } else {
    connection = new Sequelize(
     config.database,
